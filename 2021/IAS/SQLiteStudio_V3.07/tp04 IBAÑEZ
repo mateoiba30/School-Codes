@@ -1,0 +1,140 @@
+--
+-- File generated with SQLiteStudio v3.0.7 on lun. abr. 5 14:47:34 2021
+--
+-- Text encoding used: windows-1252
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: País
+CREATE TABLE País (ID INT (2) PRIMARY KEY NOT NULL, País VARCHAR (30) NOT NULL);
+INSERT INTO País (ID, País) VALUES (1, '1');
+INSERT INTO País (ID, País) VALUES (2, '1');
+INSERT INTO País (ID, País) VALUES (3, '1');
+INSERT INTO País (ID, País) VALUES (4, '1');
+INSERT INTO País (ID, País) VALUES (6, '1');
+INSERT INTO País (ID, País) VALUES (7, '1');
+INSERT INTO País (ID, País) VALUES (8, '1');
+INSERT INTO País (ID, País) VALUES (9, '1');
+INSERT INTO País (ID, País) VALUES (11, '1');
+INSERT INTO País (ID, País) VALUES (12, '1');
+INSERT INTO País (ID, País) VALUES (13, '2');
+INSERT INTO País (ID, País) VALUES (14, '1');
+INSERT INTO País (ID, País) VALUES (15, '1');
+INSERT INTO País (ID, País) VALUES (16, '1');
+INSERT INTO País (ID, País) VALUES (17, '1');
+INSERT INTO País (ID, País) VALUES (18, '1');
+INSERT INTO País (ID, País) VALUES (19, '1');
+INSERT INTO País (ID, País) VALUES (20, '1');
+INSERT INTO País (ID, País) VALUES (21, '1');
+INSERT INTO País (ID, País) VALUES (22, '1');
+INSERT INTO País (ID, País) VALUES (23, '1');
+INSERT INTO País (ID, País) VALUES (24, '1');
+INSERT INTO País (ID, País) VALUES (25, '1');
+INSERT INTO País (ID, País) VALUES (26, '1');
+INSERT INTO País (ID, País) VALUES (27, '1');
+INSERT INTO País (ID, País) VALUES (28, '1');
+INSERT INTO País (ID, País) VALUES (29, '1');
+INSERT INTO País (ID, País) VALUES (30, '1');
+INSERT INTO País (ID, País) VALUES (31, '1');
+INSERT INTO País (ID, País) VALUES (32, '1');
+INSERT INTO País (ID, País) VALUES (33, '1');
+INSERT INTO País (ID, País) VALUES (35, '1');
+
+-- Table: IDdePaíses
+CREATE TABLE IDdePaíses ("ID.país" INT (1) NOT NULL, País VARCHAR (25) NOT NULL);
+INSERT INTO IDdePaíses ("ID.país", País) VALUES (1, 'Argentina');
+INSERT INTO IDdePaíses ("ID.país", País) VALUES (1, 'Arg');
+INSERT INTO IDdePaíses ("ID.país", País) VALUES (1, 'ARG');
+INSERT INTO IDdePaíses ("ID.país", País) VALUES (1, 'ARGENT');
+INSERT INTO IDdePaíses ("ID.país", País) VALUES (1, 'República Argentina');
+INSERT INTO IDdePaíses ("ID.país", País) VALUES (2, 'CHILE');
+
+-- Table: LocalidadyProvincia
+CREATE TABLE LocalidadyProvincia (Localidad VARCHAR (50) NOT NULL, ID INT (2) PRIMARY KEY NOT NULL, Provincia VARCHAR (50));
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Godoy Cruz', 1, 'Mendoza');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('San Miguel de Tucumán', 2, 'Tucumán');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Posadas', 3, 'Misiones');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Posadas', 4, 'Misiones');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Capital Federal', 6, 'Ciudad Autónoma de Ciudad Autónoma de Buenos Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('an Carlos de Bariloche', 7, 'Río Negro');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Ciudad Autónoma de Ciudad Autónoma de Buenos Aires', 8, 'Ciudad Autónoma de Ciudad Autónoma de Buenos Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Córdoba', 9, 'Córdoba');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Adrogué', 11, 'Bs As');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Buenos Aires', 12, 'Ciudad Autónoma de Buenos Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Santiago', 13, 'Santiago');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Castelar', 14, 'Buenos Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('La Plata', 15, 'Bs Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('San Miguel de Tucumán', 16, 'Tucumán');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Bariloche', 17, 'R. Negro');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Esquel', 18, '');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Gral. San Martín', 19, 'Buenos Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Córdoba', 20, 'Córdoba');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Trelew', 21, 'Chubut');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Corrientes', 22, 'Corrientes');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('San Carlos de Bariloche', 23, 'Río Negro');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('San Miguel de Tucumán', 24, 'Tucumán');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Posadas', 25, 'Misiones');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Capital', 26, 'Salta');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Muñiz(San Miguel)', 27, 'Buenos Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Trelew', 28, 'Chubut');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Buenos Aires', 29, 'Ciudad Autónoma de Buenos Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Resistencia', 30, NULL);
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Córdoba', 31, 'Córdoba');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('San Martín', 32, 'Buenos Aires');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Comodoro Rivadavia', 33, 'Chubut');
+INSERT INTO LocalidadyProvincia (Localidad, ID, Provincia) VALUES ('Maipú', 35, 'Mendoza');
+
+-- Table: NombreyApellido
+CREATE TABLE NombreyApellido (ID INT (2) PRIMARY KEY NOT NULL, Apellido VARCHAR (30) NOT NULL, Nombre VARCHAR (30) NOT NULL);
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (30, 'Bangher', 'Debora Natalia');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (31, 'Barrera', 'Corina Anahí');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (32, 'Barriga', 'Lucía Guadalupe');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (33, 'Barrionuevo', 'Cristian Gustavo');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (35, 'Battaglia', 'María José');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (29, 'Balbuena', 'María Sol');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (20, 'Argüelllo Caro', 'Evangelina Beatriz');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (21, 'Aramni', 'Paula');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (22, 'Armúa de Reyes', 'Aurora Cristina');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (23, 'Avila', 'Gerardo Sergio');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (24, 'Ávila', 'Ana Lucía');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (25, 'Ayala', 'Mahia Mariel');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (26, 'Ayón', 'Rosana');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (27, 'Bachmann', 'Guillermo Enrique');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (28, 'Bado', 'Silvina Graciela');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (12, 'Alzogaray', 'Raúl Adolfo');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (13, 'Andrade Rojas', 'María Paola');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (14, 'Angulo Lewylle', 'Maricel');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (15, 'Aquino', 'Daniel');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (16, 'Aranda', 'Susana Graciela');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (17, 'Arbetman', 'Martina');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (18, 'Archangelsky', 'Miguel');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (19, 'Thomsett Herbert', 'Lucía');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (3, 'Acardi', 'Soraya Alejandra');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (4, 'Acuña', 'Lucía Raily');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (6, 'Aguirre', 'María Belen');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (7, 'Aisen', 'Santiago');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (8, 'Albicocco', 'Andrea Paola');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (9, 'Almirón', 'Walter Ricardo');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (11, 'Alvarez Costa', 'Agustín');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (2, 'Abraham', 'Solana');
+INSERT INTO NombreyApellido (ID, Apellido, Nombre) VALUES (1, 'Aballay', 'Fernando');
+
+-- View: act 3,1
+CREATE VIEW "act 3,1" AS SELECT NombreyApellido.Apellido, NombreyApellido.Nombre
+FROM País INNER JOIN NombreyApellido
+ON País.ID=NombreyApellido.ID
+
+ORDER BY Apellido, Nombre;
+
+-- View: act 3,2
+CREATE VIEW "act 3,2" AS SELECT NombreyApellido.Apellido, NombreyApellido.Nombre
+FROM País INNER JOIN NombreyApellido
+ON País.ID=NombreyApellido.ID
+
+WHERE País.País=1
+
+ORDER BY Apellido, Nombre;
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

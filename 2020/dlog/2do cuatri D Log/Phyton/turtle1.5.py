@@ -1,0 +1,20 @@
+from turtle import *
+
+setup(450, 200, 0, 0)
+screensize(300, 150)
+title("tp 1.5")
+hideturtle()
+
+pensize(1)
+fillcolor("orange")
+begin_fill()
+goto(75, 0)
+goto(75, 75)
+goto(0,0)
+penup()
+goto(-100, 75)
+pendown()
+goto(-100,0)
+goto(-25, 0)
+goto(-100, 75)
+end_fill()

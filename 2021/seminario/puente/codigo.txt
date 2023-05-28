@@ -1,0 +1,51 @@
+#include <Servo.h>//declaramos la librería
+
+Servo servito1;//declaramos los servos
+Servo servito2;
+
+int a1=0;//ángulo de los servos
+int a2=0;
+
+int s1=10;//pines de los servos
+int s2=11;
+
+int u1=12;//pines del ultrasonido
+int u2=13;
+
+int duracion=0;
+int distancia=0;
+int cm=0;
+
+void setup() {
+  Serial.begin(9600);
+  
+  servito1.attach(s1);//declaramos los 2 servos con sus pines 
+  servito2.attach(s2);
+
+  pinMode(u1, OUTPUT); //declaramos los pines del ultrasonido
+  pinMode(u2, INPUT);
+  digitalWrite(u1, LOW); //apagamos el ultrasonido
+}
+
+void loop() { //lo que se repite:
+  digitalWrite(u1, LOW); //realintizamos el sensor de proximidad (ultrasonido)
+  delay(2);
+  digitalWrite(u1, HIGH);
+  delay(5);
+  digitalWrite(u1, LOW);
+
+  duracion=pulseIn(u2, HIGH);
+  cm = (duracion/58.82);
+  distancia=cm;
+  
+  if(distancia<35){ //si la distancia es poca los servo abren el puente
+    servito1.write(55);
+    servito2.write(55);
+    delay(5000);
+    }
+  else{
+    servito1.write(0);
+    servito2.write(0);}
+    
+    Serial.println(distancia);
+  }
