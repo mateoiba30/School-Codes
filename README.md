@@ -1,12 +1,14 @@
 # Codigos escolares
 
-Este repositorio contiene las prácticas realizadas en las materias de programacion.
+# School codes
 
-2020: PED (bases de datos sql), dev (introduccion a C), dlog (C: estrucuras, punteros, ciclos, juegos; Python: tkinter, turtle, POO)
+This repository contains the practices carried out in programming subjects.
 
-2021: dlog (SQL+Python en bases de datos, tkinter, turtle, structs, archivos de datos txt, interfaz grafica), seminario (arduinos, servos, leds, etc), IAS (analisis de sistemas sql)
+2020: PED (sql databases), dev (introduction to C), dlog (C: structures, pointers, cycles, games; Python: tkinter, turtle, OOP)
 
-## Carpetas
+2021: dlog (SQL+Python in databases, tkinter, turtle, structs, txt data files, graphical interface), seminar (arduinos, servoamotors, leds, etc), IAS (sql systems analysis)
+
+## Folders
 
 - [2020](2020/)
 - [2021](2021/)
